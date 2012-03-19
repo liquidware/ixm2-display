@@ -107,7 +107,7 @@ double percent;
      *  0x17 - 100 nits
      *  0x14 -  70 nits
      *  0x11 -  50 nits */
-    brightness = 0x14;
+    brightness = 0x1C;
     percent = ((double)brightness)/
                (0x20) * 100.0;
 
@@ -129,7 +129,8 @@ static void oled43_panel_power_off(void)
 
 static void oled43_panel_power_on(void)
 {
-	mdelay(50);
+	mdelay(100);
+	mdelay(100);
     oled43_hardware_init();
 	PANEL_PWR_HIGH;
 }

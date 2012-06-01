@@ -107,7 +107,7 @@ double percent;
      *  0x17 - 100 nits
      *  0x14 -  70 nits
      *  0x11 -  50 nits */
-    brightness = 0x1C;
+    brightness = 0x09;
     percent = ((double)brightness)/
                (0x20) * 100.0;
 
